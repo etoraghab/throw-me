@@ -9,7 +9,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
         <Head>
           <meta name='application-name' content='PWA App' />
           <meta name='apple-mobile-web-app-capable' content='yes' />
