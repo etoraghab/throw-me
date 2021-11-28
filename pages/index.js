@@ -30,7 +30,6 @@ export default function Home() {
         <meta name="description" content="hassle free URL shortener which is totally free and ad free. Made by volcareso with nextjs and postgresql database operated with Prisma." />
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="C6xnU6De7b5pwywkmMyctt0ljMz0CsD9FmbMF2b8oiI" />
-        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <main className={styles.main}>
