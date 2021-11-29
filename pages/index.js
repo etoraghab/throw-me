@@ -63,9 +63,11 @@ export default function Home() {
         </div>
 
         </form>
-      <div style={{ fontSize: '1rem', margin: '8px' }}>
-        <span style={{ color: "#38B2AC" }}>Pro-Tip: </span> bookmark 🔖 this page for quick access!
-      </div>
+        <Box boxShadow='md' p='6' rounded='md' bg='white'>
+         <div style={{ fontSize: '1rem' }}>
+           <span style={{ color: "#38B2AC" }}>Pro-Tip: </span> bookmark 🔖 this page for quick access!
+        </div>
+        </Box>
       </main>
 
       <footer className={styles.footer}>
