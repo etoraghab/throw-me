@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
-import { Button } from "@chakra-ui/react"
+import { Button, Link } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Input } from "@chakra-ui/react"
 import { Heading, Text } from '@chakra-ui/react'
