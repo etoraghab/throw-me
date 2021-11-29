@@ -45,7 +45,6 @@ class MyDocument extends Document {
           <meta property='og:url' content='https://throw-me.vercel.app/' />
           <meta property='og:image' content='https://throw-me.vercel.app/favicon.ico' />
 
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
