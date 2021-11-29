@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
    initialColorMode: 'light',
    useSystemColorMode: true,
  }
+ const theme = extendTheme({ config })
 
   return (
     <ChakraProvider>  
