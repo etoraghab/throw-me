@@ -63,6 +63,9 @@ export default function Home() {
         </div>
 
         </form>
+      <div style={{ fontSize: '1rem' }}>
+        <span color="teal">Pro-Tip:</span> bookmark 🔖 this page for quick access!
+      </div>
       </main>
 
       <footer className={styles.footer}>
