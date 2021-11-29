@@ -6,7 +6,7 @@ import styles from '../../styles/Home.module.css'
 import { Button } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Input } from "@chakra-ui/react"
-import { Heading } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 import Script from 'next/script'
 
 export default function To() {
