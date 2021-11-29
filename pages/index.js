@@ -64,7 +64,7 @@ export default function Home() {
 
         </form>
       <div style={{ fontSize: '1rem', margin: '8px' }}>
-        <span style={{ color: "#4FD1C5" }}>Pro-Tip:</span> bookmark 🔖 this page for quick access!
+        <span style={{ color: "#38B2AC" }}>Pro-Tip: </span> bookmark 🔖 this page for quick access!
       </div>
       </main>
 
