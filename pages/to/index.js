@@ -6,6 +6,7 @@ import styles from '../../styles/Home.module.css'
 import { Button } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Input } from "@chakra-ui/react"
+import { Heading } from '@chakra-ui/react'
 import Script from 'next/script'
 
 export default function To() {
@@ -29,13 +30,11 @@ export default function To() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Please wait for ~5 seconds...
-          <div style={{ fontSize: '1.5rem' }}>
-             Chill 🧊 <br />
+        <Heading color="teal">Please wait for ~5 seconds...</Heading>
+        <Text fontSize='md'>
+           Chill 🧊 <br />
              you&apos;ll be surely redirected if the link entered was correct!
-          </div>
-        </h1>
+        </Text>
       </main>
 
       <footer className={styles.footer}>
