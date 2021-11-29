@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
 
  const config = {
    initialColorMode: 'light',
-   useSystemColorMode: false,
+   useSystemColorMode: true,
  }
 
   return (
