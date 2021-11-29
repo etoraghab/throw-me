@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Button, Input, Link } from "@chakra-ui/react"
+import { Button, Input, Link, Box } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import Script from 'next/script'
 import React from 'react'
