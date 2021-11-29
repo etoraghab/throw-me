@@ -39,7 +39,9 @@ export default function To() {
 
       <footer className={styles.footer}>
         <span className={styles.logo}>
-          (c) volcareso
+          <Link color="teal" href="https://volcareso.js.org/">(c) volcareso</Link>
+          <Link color="teal.500" href="https://twitter.com/volcareso">Twitter</Link>
+          <Link color="teal.500" href="https://github.com/volcareso">GitHub</Link>
         </span>
       </footer>
     </div>
