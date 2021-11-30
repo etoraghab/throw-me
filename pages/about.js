@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, Input, Link, Box } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
@@ -34,8 +33,9 @@ export default function Home() {
            This product does exactly what it&apos;s said to, not less, not more.
         </Box>
         <Box boxShadow='xl' p='5' rounded='md'>
-          <Image src="https://camo.githubusercontent.com/e1d9a8203dd1894aab31eb0d2fe9e5d3b0335fea266c60f8ebf778b3aeef7099/68747470733a2f2f6170692e70726f6475637468756e742e636f6d2f776964676574732f656d6265642d696d6167652f76312f746f702d706f73742d62616467652e7376673f706f73745f69643d333231313430267468656d653d6c6967687426706572696f643d6461696c79" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
-          <Image src="https://camo.githubusercontent.com/5ef0ba4d464a623e9583d4925def374644701a606c1b46a9fc8d0ccc0292eb46/68747470733a2f2f6170692e70726f6475637468756e742e636f6d2f776964676574732f656d6265642d696d6167652f76312f7265766965772e7376673f706f73745f69643d333231313430267468656d653d6c69676874" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-throw-me" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-throw-me" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=321140&theme=light&period=daily" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-review&utm_medium=badge&utm_souce=badge-throw-me#discussion-body" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
         </Box>
       </main>
 
