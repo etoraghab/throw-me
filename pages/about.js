@@ -28,7 +28,7 @@ export default function Home() {
           The hassle free url shortener...
         </p>
         <Box boxShadow='xl' p='5' m={4} rounded='md'>
-           <div style={{ color: "#38B2AC" }}What Is This?</div>
+           <div style={{ color: "#38B2AC" }}>What Is This?</div>
            Now a days, url shorteners are made to launch you to Mars, <br />
            It doesn't. <br />
            If you're expecting a url shortener to be elegant accessible, open source, free, ad-less, you're at the right place... <br />
