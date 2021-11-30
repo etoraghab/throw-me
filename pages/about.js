@@ -32,7 +32,7 @@ export default function Home() {
            If you&apos;re expecting a url shortener to be elegant accessible, open source, free, ad-less, you&apos;re at the right place... <br />
            This product does exactly what it&apos;s said to, not less, not more.
         </Box>
-        <Box boxShadow='xl' p='5' rounded='md'>
+        <Box boxShadow='xl' p='10' rounded='md'>
           <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-throw-me"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style={{width: '250px', height: '54px'}} width="250" height="54" /></a>
           <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-throw-me"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=321140&theme=light&period=daily" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style={{width: '250px', height: '54px'}} width="250" height="54" /></a>
           <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-review&utm_medium=badge&utm_souce=badge-throw-me#discussion-body"><img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style={{width: '250px', height: '54px'}} width="250" height="54" /></a>
@@ -42,8 +42,8 @@ export default function Home() {
       <footer className={styles.footer}>
         <span className={styles.logo}>
           
-          <Link m={3} color="teal.600" href="/">Go Back ?</Link>          
-          <Link m={3} color="teal.600" href="https://volcareso.js.org/">(c) volcareso</Link>
+          <Link m={3} color="teal.500" href="/">Go Back ?</Link>          
+          <Link m={3} color="teal.500" href="https://volcareso.js.org/">(c) volcareso</Link>
           <Link m={3} color="teal.500" href="https://twitter.com/volcareso">Twitter</Link>
           <Link m={3} color="teal.500" href="https://github.com/volcareso">GitHub</Link>
         </span>
