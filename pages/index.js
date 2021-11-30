@@ -9,15 +9,17 @@ import copy from 'copy-text-to-clipboard'
 
 export default function Home() {
   function registerUser(event){
-    event.preventDefault() // don't redirect the page
+    event.preventDefault();
+    var random__ = Math.random().toString(36).substr(2, 5);
    if(event.target.name.value == ''){
       var todo = {
-        name: Math.random().toString(36).substr(2, 5),
+        name: random__,
         url: event.target.url.value
       }
    }else{
+      var random__ = event.target.name.value;
       var todo = {
-        name: event.target.name.value,
+        name: random__,
         url: event.target.url.value
       }
    }
@@ -28,8 +30,8 @@ export default function Home() {
     }).then(res => res.json())
         .then(json => {
           if(json.message == "success"){
-            swal("congrats!", "link was copied!: https://qop.now.sh/to?q="+event.target.name.value, "success")
-            copy('https://qop.now.sh/to?q='+event.target.name.value);
+            swal("congrats!", "link was copied!: https://qop.now.sh/to?q="+random__, "success")
+            copy('https://qop.now.sh/to?q=' + random__);
           }else{
             swal("oops!", json.message, "warning")
           }
