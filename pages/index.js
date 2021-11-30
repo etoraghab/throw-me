@@ -10,12 +10,24 @@ import copy from 'copy-text-to-clipboard'
 export default function Home() {
   function registerUser(event){
     event.preventDefault() // don't redirect the page
+   if(event.target.name.value == ''){
+      var result           = '';
+      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
 
-   let todo = {
+      var todo = {
+        name: result,
+        url: event.target.url.value
+      }
+   }else{
+      var todo = {
         name: event.target.name.value,
         url: event.target.url.value
-    };
-
+      }
+   }
     fetch('/api/create/', {
         method: 'POST',
         body: JSON.stringify(todo),
