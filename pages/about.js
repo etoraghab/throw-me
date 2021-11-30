@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Button, Input, Link, Box } from "@chakra-ui/react"
+import { Button, Input, Link, Box, Heading } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import Script from 'next/script'
 import React from 'react'
@@ -26,7 +26,7 @@ export default function Home() {
           The hassle free url shortener...
         </p>
         <Box boxShadow='xl' p='5' m={4} rounded='md'>
-           <div style={{ color: "#38B2AC" }}>What Is This?</div>
+           <Heading style={{ color: "#38B2AC" }}>What Is This?</Heading>
            Now a days, url shorteners are made to launch you to Mars, <br />
            It doesn&apos;t. <br />
            If you&apos;re expecting a url shortener to be elegant accessible, open source, free, ad-less, you&apos;re at the right place... <br />
