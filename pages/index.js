@@ -10,7 +10,7 @@ import copy from 'copy-text-to-clipboard'
 export default function Home() {
   function registerUser(event){
     event.preventDefault();
-    var random__ = Math.random().toString(36).substr(2, 5);
+    var random__ = Math.random().toString(36).substr(4, 8);
    if(event.target.name.value == ''){
       var todo = {
         name: random__,
