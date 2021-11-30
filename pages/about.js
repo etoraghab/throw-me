@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, Input, Link, Box } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
