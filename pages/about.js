@@ -5,8 +5,6 @@ import { Button, Input, Link, Box } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import Script from 'next/script'
 import React from 'react'
-import swal from 'sweetalert'
-import copy from 'copy-text-to-clipboard'
 
 export default function Home() {
   return (
