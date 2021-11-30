@@ -11,15 +11,8 @@ export default function Home() {
   function registerUser(event){
     event.preventDefault() // don't redirect the page
    if(event.target.name.value == ''){
-      var result           = '';
-      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      var charactersLength = characters.length;
-      for ( var i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      }
-
       var todo = {
-        name: result,
+        name: Math.random().toString(36).substr(2, 5),
         url: event.target.url.value
       }
    }else{
