@@ -30,20 +30,22 @@ export default function Home() {
         <Box boxShadow='xl' p='5' m={4} rounded='md'>
            <div style={{ color: "#38B2AC" }}>What Is This?</div>
            Now a days, url shorteners are made to launch you to Mars, <br />
-           It doesn't. <br />
-           If you're expecting a url shortener to be elegant accessible, open source, free, ad-less, you're at the right place... <br />
-           This product does exactly what it's said to, not less, not more.
+           It doesn&apos;t. <br />
+           If you&apos;re expecting a url shortener to be elegant accessible, open source, free, ad-less, you&apos;re at the right place... <br />
+           This product does exactly what it&apos;s said to, not less, not more.
         </Box>
         <Box boxShadow='xl' p='5' rounded='md'>
-          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-throw-me" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-throw-me" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=321140&theme=light&period=daily" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-          <a href="https://www.producthunt.com/posts/throw-me?utm_source=badge-review&utm_medium=badge&utm_souce=badge-throw-me#discussion-body" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+          <Link href="https://www.producthunt.com/posts/throw-me?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-throw-me" target="_blank" rel="noreferrer"><Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></Link>
+          <Link href="https://www.producthunt.com/posts/throw-me?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-throw-me" target="_blank" rel="noreferrer"><Image src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=321140&theme=light&period=daily" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></Link>
+          <Link href="https://www.producthunt.com/posts/throw-me?utm_source=badge-review&utm_medium=badge&utm_souce=badge-throw-me#discussion-body" target="_blank" rel="noreferrer"><Image src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=321140&theme=light" alt="Throw-Me - A hassle free URL shortener | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></Link>
         </Box>
       </main>
 
       <footer className={styles.footer}>
         <span className={styles.logo}>
-          <Link m={3} color="teal" href="https://volcareso.js.org/">(c) volcareso</Link>
+          
+          <Link m={3} color="teal.600" href="/">Go Back ?</Link>          
+          <Link m={3} color="teal.600" href="https://volcareso.js.org/">(c) volcareso</Link>
           <Link m={3} color="teal.500" href="https://twitter.com/volcareso">Twitter</Link>
           <Link m={3} color="teal.500" href="https://github.com/volcareso">GitHub</Link>
         </span>
