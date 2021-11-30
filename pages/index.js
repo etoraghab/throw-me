@@ -23,6 +23,7 @@ export default function Home() {
         url: event.target.url.value
       }
    }
+    event.target.name.value = random__;
     fetch('/api/create/', {
         method: 'POST',
         body: JSON.stringify(todo),
