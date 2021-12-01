@@ -75,6 +75,10 @@ export default function Home() {
         <Box boxShadow='xl' p='5' rounded='md'>
            <span style={{ color: "#38B2AC" }}>Pro-Tip: </span> bookmark 🔖 this page for quick access!
         </Box>
+        <Box boxShadow='xl' p='5' m={3} rounded='md'>
+           <span style={{ color: "#38B2AC" }}>sponser: </span> Due to so many people using the service, I can't handle the huge database on my own expenses. If you want to support this service or help with the database costs, kindly drop me a mail at <Link href="mailto:volcareso@gmail.com">volcareso@gmail.com</Link> <br />
+           I will surely reply within the day.
+        </Box>
       </main>
 
       <footer className={styles.footer}>
