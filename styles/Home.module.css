@@ -2,7 +2,7 @@
 
 .container {
    padding: 0 2rem;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Oswald', sans-serif !important;
 }
 
 .main {
