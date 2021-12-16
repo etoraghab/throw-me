@@ -2,7 +2,7 @@ import React from 'react'
 import fetch from 'node-fetch'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import { Button, Link } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Input } from "@chakra-ui/react"
@@ -40,7 +40,7 @@ export default function To() {
 
       <footer className={styles.footer}>
         <span className={styles.logo}>
-          <Link color="teal" href="https://volcareso.js.org/">(c) volcareso</Link>
+          <Link color="teal.500" href="https://volcareso.js.org/">(c) volcareso</Link>
           <Link color="teal.500" href="https://twitter.com/volcareso">Twitter</Link>
           <Link color="teal.500" href="https://github.com/volcareso">GitHub</Link>
         </span>
