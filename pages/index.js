@@ -31,8 +31,8 @@ export default function Home() {
     }).then(res => res.json())
         .then(json => {
           if(json.message == "success"){
-            swal("congrats!", "link was copied!: https://qop.now.sh/to?q="+random__, "success")
-            copy('https://'+ window.location.hostname + random__);
+            swal("congrats!", "link was copied!: https://qop.now.sh/"+random__, "success")
+            copy('https://qop.now.sh/' + random__);
           }else{
             swal("oops!", json.message, "warning")
           }
