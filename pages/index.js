@@ -32,7 +32,7 @@ export default function Home() {
         .then(json => {
           if(json.message == "success"){
             swal("congrats!", "link was copied!: https://qop.now.sh/to?q="+random__, "success")
-            copy('https://qop.now.sh/to?q=' + random__);
+            copy('https://'+ window.location.hostname + random__);
           }else{
             swal("oops!", json.message, "warning")
           }
