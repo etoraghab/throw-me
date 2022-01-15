@@ -80,9 +80,9 @@ export default function Home() {
       <footer className={styles.footer}>
         <span className={styles.logo}>
           <Link m={3} color="teal.500" href="/about">About this site</Link>
-          <Link m={3} color="teal.500" href="https://volcareso.js.org/">(c) volcareso</Link>
-          <Link m={3} color="teal.500" href="https://twitter.com/volcareso">Twitter</Link>
-          <Link m={3} color="teal.500" href="https://github.com/volcareso">GitHub</Link>
+          <Link m={3} color="teal.500" href="https://atordvairn.js.cool/">(c) atordvairn</Link>
+          <Link m={3} color="teal.500" href="https://twitter.com/atordvairn">Twitter</Link>
+          <Link m={3} color="teal.500" href="https://github.com/atordvairn">GitHub</Link>
         </span>
       </footer>
     </div>
