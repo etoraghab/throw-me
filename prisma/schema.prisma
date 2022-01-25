@@ -7,7 +7,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
 model urls {
   url  String @db.VarChar(200)
-  name String @unique @db.VarChar(20)
+  name String @db.VarChar(20) @unique
 }
