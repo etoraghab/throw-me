@@ -74,8 +74,8 @@ export default function Home() {
               id='name'
               name='name'
               type='text'
-              minlength='3'
-              maxlength='20'
+              minLength='3'
+              maxLength='20'
             />
             <Input
               placeholder='https://google.com/'
@@ -83,8 +83,8 @@ export default function Home() {
               name='url'
               type='url'
               required
-              maxlength='200'
-              minlength='5'
+              maxLength='200'
+              minLength='5'
             />
           </div>
           <div className={styles.button_doiIt}>
