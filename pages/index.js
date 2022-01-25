@@ -3,30 +3,23 @@ import styles from '../styles/Home.module.css';
 import { Button, Input, Link, Box } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Script from 'next/script';
-import React from 'react';
+import { useState } from 'react';
 import swal from 'sweetalert';
 import copy from 'copy-text-to-clipboard';
 
 export default function Home() {
+  const [name, setName] = useState('');
+  const [url, setUrl] = useState('');
   function registerUser(event) {
     event.preventDefault();
-    var random__ = Math.random().toString(36).substr(4, 5);
-    if (event.target.name.value == '') {
-      var todo = {
-        name: random__,
-        url: event.target.url.value,
-      };
-    } else {
-      var random__ = event.target.name.value;
-      var todo = {
-        name: random__,
-        url: event.target.url.value,
-      };
-    }
-    event.target.name.value = random__;
+    if (url.trim() === '') return swal('Error!', 'Please enter a url', 'error');
+
     fetch('/api/create/', {
       method: 'POST',
-      body: JSON.stringify(todo),
+      body:
+        name.trim() === ''
+          ? JSON.stringify({ url })
+          : JSON.stringify({ name, url }),
       headers: { 'Content-Type': 'application/json' },
     })
       .then(res => res.json())
@@ -34,10 +27,10 @@ export default function Home() {
         if (json.message == 'success') {
           swal(
             'congrats!',
-            'link was copied!: https://9x.now.sh/' + random__,
+            'link was copied!: https://9x.now.sh/' + json.name,
             'success'
           );
-          copy('https://9x.now.sh/' + random__);
+          copy('https://9x.now.sh/' + json.name);
         } else {
           swal('oops!', json.message, 'warning');
         }
@@ -73,6 +66,8 @@ export default function Home() {
               placeholder='google ( optional )'
               id='name'
               name='name'
+              value={name}
+              onChange={e => setName(e.target.value)}
               type='text'
               minLength='3'
               maxLength='20'
@@ -81,6 +76,8 @@ export default function Home() {
               placeholder='https://google.com/'
               id='url'
               name='url'
+              value={url}
+              onChange={e => setUrl(e.target.value)}
               type='url'
               required
               maxLength='200'
