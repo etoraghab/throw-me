@@ -9,6 +9,12 @@ datasource db {
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
 model urls {
-  url  String @db.VarChar(200)
+  url  String @db.VarChar(1000000)
   name String @db.VarChar(20) @unique
+  ip String @db.VarChar(200)
+}
+
+model banned {
+  id String @db.VarChar(20) @unique
+  ip String @db.VarChar(200) @unique
 }
