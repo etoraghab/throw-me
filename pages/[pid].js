@@ -1,9 +1,9 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient({ log: ['query', 'info'] });
+const prisma = new PrismaClient({ log: ["query", "info"] });
 
 /** @type {import('next').GetServerSideProps} */
-export const getServerSideProps = async context => {
+export const getServerSideProps = async (context) => {
   const { pid } = context.query;
   if (pid.length <= 20 && pid.length >= 3) {
     const link = await prisma.urls.findUnique({
