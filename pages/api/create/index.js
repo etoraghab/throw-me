@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   if (bannedIp == null) {
     try {
       console.log(requestIp.getClientIp(req))
-      await limiter.check(res, 10, 'CACHE_TOKEN');
+      await limiter.check(res, 2, 'CACHE_TOKEN');
 
       if (req.method !== 'POST') {
         res.status(400).send({ message: 'Only POST requests allowed' });
@@ -89,10 +89,26 @@ export default async function handler(req, res) {
                   }
                 }
               } else {
+                const bannedIp = await prisma.banned.findUnique({
+                  where: {
+                    id: pid
+                  }
+                })
+
+                if (bannedIp == null) {
+                  await prisma.banned.create({
+                    data: {
+                      id: pid,
+                      ip: pid
+                    },
+                  });
+                }
+
                 res.setHeader('Content-Type', 'application/json');
                 res.status(400).send({ message: 'failed', reason: 'parameters' });
               }
             } else {
+
               res.setHeader('Content-Type', 'application/json');
               res.status(400).send({ message: 'phishing site!', reason: 'phish' });
             }
@@ -108,7 +124,7 @@ export default async function handler(req, res) {
           });
       }
     } catch {
-      res.status(429).json({ message: 'Rate limit exceeded' });
+      res.status(429).json({ message: 'you can shorten only once a minute' });
     }
   } else {
     res.status(200).json({ message: 'banned from service.' });
