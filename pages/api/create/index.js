@@ -7,7 +7,7 @@ import fetch, { BodyMixin } from "node-fetch";
 import requestIp from "request-ip";
 
 const limiter = rateLimit({
-  interval: 60 * 1000,
+  interval: 5 * 1000,
   uniqueTokenPerInterval: 500,
 });
 
